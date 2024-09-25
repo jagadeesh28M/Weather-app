@@ -1,7 +1,7 @@
 const SearchBar = () => {
   return (
     <>
-      <div className="flex gap-3 items-center w-auto">
+      <div className="flex justify-evenly gap-3 items-center w-auto">
         <input
           type="text"
           placeholder="search"
