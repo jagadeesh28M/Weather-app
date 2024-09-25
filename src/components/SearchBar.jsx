@@ -1,4 +1,27 @@
-const SearchBar = () => {
+import { useState } from "react";
+
+const SearchBar = ({ onSearch }) => {
+  const [city, setCity] = useState("");
+
+  const handleInputChange = (e) => {
+    setCity(e.target.value);
+  };
+
+  const handleSearchClick = () => {
+    if (city) {
+      setCity("");
+      onSearch(city);
+    } else {
+      alert("Please enter a city name");
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearchClick();
+    }
+  };
+
   return (
     <>
       <div className="flex justify-evenly gap-3 items-center w-auto">
@@ -6,8 +29,11 @@ const SearchBar = () => {
           type="text"
           placeholder="search"
           className="bg-white p-2 rounded-3xl pl-3 text-left text-gray-400 font-poppins"
+          onChange={handleInputChange}
+          onKeyDown={handleKeyDown}
+          value={city}
         />
-        <button>
+        <button onClick={handleSearchClick}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
