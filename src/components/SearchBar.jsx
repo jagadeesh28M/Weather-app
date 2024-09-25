@@ -29,7 +29,7 @@ const SearchBar = ({ onSearch, locationSearch }) => {
         <input
           type="text"
           placeholder="search"
-          className="bg-white p-2 rounded-3xl pl-3 text-left text-gray-400 font-poppins"
+          className="bg-white p-2 rounded-3xl pl-3 text-left text-black font-poppins"
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
           value={city}
