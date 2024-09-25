@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import humidity from "../assets/humidity.png";
 import wind from "../assets/wind.png";
 

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import clear from "../assets/clear.png";
 import cloud from "../assets/cloud.png";
 import drizzle from "../assets/drizzle.png";
