@@ -5,7 +5,7 @@ import Info from "../components/Info";
 const Dashboard = () => {
   return (
     <>
-      <div className="h-auto w-auto p-6 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg">
+      <div className="h-auto w-auto p-6 bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg">
         <SearchBar></SearchBar>
         <Temperature></Temperature>
         <div>
